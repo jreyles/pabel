@@ -5,7 +5,7 @@ cwd=os.getcwd()
 working_dir=raw_input("Please enter the working directory of PaDEL:")
 os.chdir(working_dir)
 file_location=raw_input("Please enter the directory for the location of the file:")
-command_line='java -jar PaDEL-Descriptor.jar -dir ' + file_location+ ' -file test.csv -3d -fingerprints -removesalt -standardizenitro -log -retainorder'
+command_line='java -jar PaDEL-Descriptor.jar -dir ' + file_location + ' -file test.csv -3d -fingerprints -removesalt -standardizenitro -log -retainorder'
 args=command_line.split(' ')
 padel=subprocess.Popen(args,stdin=subprocess.PIPE,stdout=subprocess.PIPE)
 stdout,stderr=padel.communicate()

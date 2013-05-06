@@ -1,0 +1,306 @@
+# This is the init file for the Python babellink.py code that 
+# will execute the OPENBabel code application with the
+# parameters specified in this file. 
+# The format for specifying the parameters for 
+# OPENBabel is as key value pairs like for a Python 
+# dictionary. Each line specifies just one  key value pair.
+# The key and value pairs must be separated by at least one space. 
+# Comment lines MUST begin with either a # or a blank character. 
+# Valid parameters are as follows. If parameter is not specified, then it is not used.
+#
+# Parameters to specify input directory and output directory. All files with
+# the specified input format type in the specified input directory will be converted
+# to the specified output format and saved in the specified output directory. 
+# 
+  indir  -- Full path name of the directory/folder with input files
+  outdir -- Full path name of the directory/folder that will contain the converted input files
+  sufx   -- Text string to append to the end of the converted file name, if desired. 
+            This might be useful if the indir and outdir are the same and you do not want 
+            to overwrite your input file. 
+
+# Valid Input file format types. Specified by parameter infmt. For example, 
+# infmt acr    or   infmt  sdf
+  acr -- ACR format
+  adfout -- ADF output format
+  alc -- Alchemy format
+  arc -- Accelrys/MSI Biosym/Insight II CAR format
+  axsf -- XCrySDen Structure Format
+  bgf -- MSI BGF format
+  box -- Dock 3.5 Box format
+  bs -- Ball and Stick format
+  c3d1 -- Chem3D Cartesian 1 format
+  c3d2 -- Chem3D Cartesian 2 format
+  caccrt -- Cacao Cartesian format
+  can -- Canonical SMILES format
+  car -- Accelrys/MSI Biosym/Insight II CAR format
+  castep -- CASTEP format
+  ccc -- CCC format
+  cdx -- ChemDraw binary format
+  cdxml -- ChemDraw CDXML format
+  cif -- Crystallographic Information File
+  ck -- ChemKin format
+  cml -- Chemical Markup Language
+  cmlr -- CML Reaction format
+  CONFIG -- DL-POLY CONFIG
+  CONTCAR -- VASP format
+  crk2d -- Chemical Resource Kit diagram(2D)
+  crk3d -- Chemical Resource Kit 3D format
+  ct -- ChemDraw Connection Table format
+  cub -- Gaussian cube format
+  cube -- Gaussian cube format
+  dat -- Generic Output file format
+  dmol -- DMol3 coordinates format
+  dx -- OpenDX cube format for APBS
+  ent -- Protein Data Bank format
+  fa -- FASTA format
+  fasta -- FASTA format
+  fch -- Gaussian formatted checkpoint file format
+  fchk -- Gaussian formatted checkpoint file format
+  fck -- Gaussian formatted checkpoint file format
+  feat -- Feature format
+  fhiaims -- FHIaims XYZ format
+  fract -- Free Form Fractional format
+  fs -- Fastsearch format
+  fsa -- FASTA format
+  g03 -- Gaussian Output
+  g09 -- Gaussian Output
+  g92 -- Gaussian Output
+  g94 -- Gaussian Output
+  g98 -- Gaussian Output
+  gal -- Gaussian Output
+  gam -- GAMESS Output
+  gamess -- GAMESS Output
+  gamin -- GAMESS Input
+  gamout -- GAMESS Output
+  got -- GULP format
+  gpr -- Ghemical format
+  gro -- GRO format
+  gukin -- GAMESS-UK Input
+  gukout -- GAMESS-UK Output
+  gzmat -- Gaussian Z-Matrix Input
+  hin -- HyperChem HIN format
+  HISTORY -- DL-POLY HISTORY
+  inchi -- InChI format
+  inp -- GAMESS Input
+  ins -- ShelX format
+  jout -- Jaguar output format
+  log -- Generic Output file format
+  mcdl -- MCDL format
+  mcif -- Macromolecular Crystallographic Info
+  mdl -- MDL MOL format
+  ml2 -- Sybyl Mol2 format
+  mmcif -- Macromolecular Crystallographic Info
+  mmd -- MacroModel format
+  mmod -- MacroModel format
+  mol -- MDL MOL format
+  mol2 -- Sybyl Mol2 format
+  mold -- Molden format
+  molden -- Molden format
+  molf -- Molden format
+  moo -- MOPAC Output format
+  mop -- MOPAC Cartesian format
+  mopcrt -- MOPAC Cartesian format
+  mopin -- MOPAC Internal
+  mopout -- MOPAC Output format
+  mpc -- MOPAC Cartesian format
+  mpo -- Molpro output format
+  mpqc -- MPQC output format
+  mrv -- Chemical Markup Language
+  msi -- Accelrys/MSI Cerius II MSI format
+  nwo -- NWChem output format
+  out -- Generic Output file format
+  outmol -- DMol3 coordinates format
+  output -- Generic Output file format
+  pc -- PubChem format
+  pcm -- PCModel Format
+  pdb -- Protein Data Bank format
+  pdbqt -- AutoDock PDQBT format
+  png -- PNG 2D depiction
+  POSCAR -- VASP format
+  pqr -- PQR format
+  pqs -- Parallel Quantum Solutions format
+  prep -- Amber Prep format
+  pwscf -- PWscf format
+  qcout -- Q-Chem output format
+  res -- ShelX format
+  rsmi -- Reaction SMILES format
+  rxn -- MDL RXN format
+  sd -- MDL MOL format
+  sdf -- MDL MOL format
+  smi -- SMILES format
+  smiles -- SMILES format
+  sy2 -- Sybyl Mol2 format
+  t41 -- ADF TAPE41 format
+  tdd -- Thermo format
+  text -- Read and write raw text
+  therm -- Thermo format
+  tmol -- TurboMole Coordinate format
+  txt -- Title format
+  txyz -- Tinker XYZ format
+  unixyz -- UniChem XYZ format
+  vmol -- ViewMol format
+  xml -- General XML format
+  xsf -- XCrySDen Structure Format
+  xtc -- XTC format
+  xyz -- XYZ cartesian coordinates format
+  yob -- YASARA.org YOB format
+
+# Valid output file formats. Specified by parameter outfmt. For example, 
+# outfmt adf    or   outfmt  sdf
+  adf -- ADF cartesian input format
+  alc -- Alchemy format
+  bgf -- MSI BGF format
+  box -- Dock 3.5 Box format
+  bs -- Ball and Stick format
+  c3d1 -- Chem3D Cartesian 1 format
+  c3d2 -- Chem3D Cartesian 2 format
+  cac -- CAChe MolStruct format
+  caccrt -- Cacao Cartesian format
+  cache -- CAChe MolStruct format
+  cacint -- Cacao Internal format
+  can -- Canonical SMILES format
+  cdxml -- ChemDraw CDXML format
+  cht -- Chemtool format
+  cif -- Crystallographic Information File
+  ck -- ChemKin format
+  cml -- Chemical Markup Language
+  cmlr -- CML Reaction format
+  com -- Gaussian 98/03 Input
+  CONFIG -- DL-POLY CONFIG
+  copy -- Copy raw text
+  crk2d -- Chemical Resource Kit diagram(2D)
+  crk3d -- Chemical Resource Kit 3D format
+  csr -- Accelrys/MSI Quanta CSR format
+  cssr -- CSD CSSR format
+  ct -- ChemDraw Connection Table format
+  cub -- Gaussian cube format
+  cube -- Gaussian cube format
+  dmol -- DMol3 coordinates format
+  dx -- OpenDX cube format for APBS
+  ent -- Protein Data Bank format
+  fa -- FASTA format
+  fasta -- FASTA format
+  feat -- Feature format
+  fh -- Fenske-Hall Z-Matrix format
+  fhiaims -- FHIaims XYZ format
+  fix -- SMILES FIX format
+  fpt -- Fingerprint format
+  fract -- Free Form Fractional format
+  fs -- Fastsearch format
+  fsa -- FASTA format
+  gamin -- GAMESS Input
+  gau -- Gaussian 98/03 Input
+  gjc -- Gaussian 98/03 Input
+  gjf -- Gaussian 98/03 Input
+  gpr -- Ghemical format
+  gr96 -- GROMOS96 format
+  gro -- GRO format
+  gukin -- GAMESS-UK Input
+  gukout -- GAMESS-UK Output
+  gzmat -- Gaussian Z-Matrix Input
+  hin -- HyperChem HIN format
+  inchi -- InChI format
+  inchikey -- InChIKey
+  inp -- GAMESS Input
+  jin -- Jaguar input format
+  k -- Compare molecules using InChI
+  mcdl -- MCDL format
+  mcif -- Macromolecular Crystallographic Info
+  mdl -- MDL MOL format
+  ml2 -- Sybyl Mol2 format
+  mmcif -- Macromolecular Crystallographic Info
+  mmd -- MacroModel format
+  mmod -- MacroModel format
+  mna -- Multilevel Neighborhoods of Atoms (MNA)
+  mol -- MDL MOL format
+  mol2 -- Sybyl Mol2 format
+  mold -- Molden format
+  molden -- Molden format
+  molf -- Molden format
+  molreport -- Open Babel molecule report
+  mop -- MOPAC Cartesian format
+  mopcrt -- MOPAC Cartesian format
+  mopin -- MOPAC Internal
+  mp -- Molpro input format
+  mpc -- MOPAC Cartesian format
+  mpd -- MolPrint2D format
+  mpqcin -- MPQC simplified input format
+  mrv -- Chemical Markup Language
+  msms -- M.F. Sanner's MSMS input format
+  nul -- Outputs nothing
+  nw -- NWChem input format
+  outmol -- DMol3 coordinates format
+  pcm -- PCModel Format
+  pdb -- Protein Data Bank format
+  pdbqt -- AutoDock PDQBT format
+  png -- PNG 2D depiction
+  png2 -- PNG2 format
+  pov -- POV-Ray input format
+  pqr -- PQR format
+  pqs -- Parallel Quantum Solutions format
+  qcin -- Q-Chem input format
+  report -- Open Babel report format
+  rsmi -- Reaction SMILES format
+  rxn -- MDL RXN format
+  sd -- MDL MOL format
+  sdf -- MDL MOL format
+  smi -- SMILES format
+  smiles -- SMILES format
+  svg -- SVG 2D depiction
+  sy2 -- Sybyl Mol2 format
+  tdd -- Thermo format
+  text -- Read and write raw text
+  therm -- Thermo format
+  tmol -- TurboMole Coordinate format
+  txt -- Title format
+  txyz -- Tinker XYZ format
+  unixyz -- UniChem XYZ format
+  vmol -- ViewMol format
+  xed -- XED format
+  xyz -- XYZ cartesian coordinates format
+  yob -- YASARA.org YOB format
+  zin -- ZINDO input format
+
+# Conversion options
+   f <#> Start import at molecule # specified
+   l <#> End import at molecule # specified
+   t Y/N All input files describe a single molecule
+   e Y/N Continue with next object after error, if possible
+   z Y/N Compress the output with gzip
+   H Y/N Outputs this help text
+   Hxxx <Hxxx> (xxx is file format ID e.g. Hcml) gives format info
+   V Y/N Outputs version number
+   F Y/N Outputs the available fingerprint types
+   m Y/N Produces multiple output files, to allow:
+         Splitting: e.g. babel infile.mol new.smi -m
+         puts each molecule into new1.smi new2.smi etc
+      Batch conversion: e.g. babel *.mol -osmi -m
+        converts each input file to a .smi file
+# For conversions of molecules
+    Additional options :
+    d Y/N Delete Hydrogens
+    gen3d Y/N Generate 3D coordinates If you convert from a SMILES to 
+          an SDF without specifying --gen3d, the resulting sdf will not contain coordinates.
+    h Y/N Add Hydrogens
+    p Y/N Add Hydrogens appropriate for pH
+    b Y/N Convert dative bonds e.g.[N+]([O-])=O to N(=O)=O
+    c Y/N Center Coordinates
+    j Y/N Join all input molecules into a single output molecule
+    s Y/N "smarts" Convert only molecules matching SMARTS:
+    v Y/N "smarts" Convert only molecules NOT matching SMARTS:
+
+#########################################
+#########################################
+# The parameter specification starts here
+# Never change of delete the following line
+special_options Hxxx f l infmt outfmt sufx
+# The "\" at the end of the iindir and outdir directory paths is required
+indir F:\PythonWorkspaces\ENGR220\sdfin\
+outdir F:\PythonWorkspaces\ENGR220\sdfout\
+infmt sdf
+outfmt sdf
+gen3d Y
+h Y
+sufx _3D
+
+
